@@ -1,220 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_3.css">
+    <title>Pizza margarita | Pizzeria Il Padrino</title>
     <link rel="icon" type="image/x-icon" href="./imgs/LogoCuadrado.ico">
-    <title>Detalles</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="./imgs/LogoCuadrado.png" alt="logo">
-            <h1><i>Pizzeria Il Padrino</i></h1>
-        </div>
-        <div class="menus">
-            <ul class="horizontal">
+
+    <header class="cabecera">
+        <a href="index.html" class="logo">
+            <img src="./imgs/LogoCuadrado.png">
+            <span>Pizzeria Il Padrino</span>
+        </a>
+
+        <nav class="menu">
+            <ul>
                 <li><a href="index.html">Inicio</a></li>
-                <li class="active"><a href="detalles.html">Carta</a></li>
-                <li><a href="tienda.html">Nosotros</a></li>
-                <li>Contacto</li>
+                <li><a href="tienda.html" class="activo">Carta</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </div>
-        <div class="reserva">
-            <button>Reservar</button>
+        </nav>
+
+        <div class="cabecera-acciones">
+            <a href="login.html" class="enlace-acceso">Acceder</a>
+            <a href="#contacto" class="boton boton-oscuro">Reservar</a>
         </div>
     </header>
+
     <main>
-         
-        <section class="menu-section" id="carta">
-    <div class="menu-container">
 
-      <h1 class="section-title">Nuestra carta</h1>
+        <section class="detalle">
+            <div class="contenedor detalle-contenido">
 
-      <nav class="menu-filters" aria-label="Categorías del menú">
-        <a class="filter active">Todo</a>
-        <a class="filter">Pizzas</a>
-        <a class="filter">Pastas</a>
-        <a class="filter">Carnes</a>
-        <a class="filter">Bebidas</a>
-        <a class="filter">Postres</a>
-      </nav>
+                <div class="detalle-imagen">
+                    <img src="./imgs/238-n1.jpg">
+                </div>
 
-      <div class="menu-grid">
+                <div class="detalle-info">
+                    <span class="etiqueta">Pizzas</span>
+                    <h1>Pizza margarita</h1>
+                    <p class="detalle-precio">9,99 €</p>
+                    <p class="detalle-descripcion">La pizza clásica de toda la vida.</p>
 
-        <article class="menu-card" id="pizzas">
-          <img src="./imgs/238-n1.jpg" alt="Pizza margarita">
-          <div class="card-content">
-            <span class="price">$ 9.99</span>
-            <h2>Pizza margarita</h2>
-            <p>Base de mozzarella, tomate, orégano y albahaca fresca.</p>
-          </div>
-        </article>
+                    <h2>Ingredientes</h2>
+                    <ul class="ingredientes">
+                        <li>Tomate San Marzano</li>
+                        <li>Mozzarella fior di latte</li>
+                        <li>Albahaca fresca</li>
+                        <li>Orégano</li>
+                        <li>Aceite de oliva virgen extra</li>
+                    </ul>
 
-        <article class="menu-card">
-          <img src="./imgs/presentacion-final-de-la-pizza-prosciutto-o-con-jamon-cocido.jpg" alt="Pizza prosciutto">
-          <div class="card-content">
-            <span class="price">$ 11.49</span>
-            <h2>Pizza prosciutto</h2>
-            <p>Masa de mozzarella, tomate, orégano y jamón italiano cocido.</p>
-          </div>
-        </article>
+                    <form class="detalle-compra" action="#">
+                        <fieldset>
+                            <legend>Tamaño</legend>
+                            <div class="tamanios">
+                                <label><input type="radio" name="tamanio" value="mediana" checked> Mediana (30 cm) - 9,90 €</label>
+                                <label><input type="radio" name="tamanio" value="familiar"> Familiar (40 cm) - 9,90 + 5 €</label>
+                            </div>
+                        </fieldset>
 
-        <article class="menu-card">
-          <img src="./imgs/receta-pizza-de-pepperoni-facil-1729847335.jpg" alt="Pizza pepperoni">
-          <div class="card-content">
-            <span class="price">$ 12.49</span>
-            <h2>Pizza pepperoni</h2>
-            <p>Base de mozzarella, tomate, orégano y salami picante.</p>
-          </div>
-        </article>
+                        <div class="detalle-botones">
+                            <button type="button" class="boton boton-rojo">Añadir al pedido</button>
+                        </div>
+                    </form>
 
-        <article class="menu-card">
-          <img src="./imgs/a.jpg" alt="Pizza mediterránea">
-          <div class="card-content">
-            <span class="price">$ 13.49</span>
-            <h2>Pizza mediterránea</h2>
-            <p>Pizza de mozzarella, tomate, aceitunas, salami y romero.</p>
-          </div>
-        </article>
+                    <a href="tienda.html" class="enlace-rojo enlace-volver">Volver a la carta</a>
+                </div>
 
-        <article class="menu-card" id="pastas">
-          <img src="./imgs/lasagna-original..jpg" alt="Lasaña de carne">
-          <div class="card-content">
-            <span class="price">$ 10.99</span>
-            <h2>Lasaña de carne</h2>
-            <p>Lasaña de carne picada, cebolla, bechamel, tomate, queso, hierbas y queso gratinado.</p>
-          </div>
-        </article>
+            </div>
+        </section>
 
-        <article class="menu-card">
-          <img src="./imgs/lasana_de_berenjenas_con_carne_31364_orig.jpg" alt="Lasaña de verduras">
-          <div class="card-content">
-            <span class="price">$ 11.49</span>
-            <h2>Lasaña de verduras</h2>
-            <p>Lasaña de berenjena, zanahoria, espinacas, champiñones, salsa bechamel y queso gratinado.</p>
-          </div>
-        </article>
+        <section class="relacionados">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">También te puede gustar</h2>
 
-        <article class="menu-card">
-          <img src="./imgs/imagaes.jpg" alt="Carpaccio">
-          <div class="card-content">
-            <span class="price">$ 11.99</span>
-            <h2>Carpaccio</h2>
-            <p>Carne de ternera, parmesano, rúcula, aceite de oliva, limón y pimienta.</p>
-          </div>
-        </article>
+                <div class="productos-grid">
+                    <a href="detalles.html" class="producto">
+                        <img src="./imgs/presentacion-final-de-la-pizza-prosciutto-o-con-jamon-cocido.jpg">
+                        <div class="producto-info">
+                            <span class="etiqueta">Pizza</span>
+                            <h2 class="producto-nombre">Pizza prosciutto</h2>
+                            <p class="producto-descripcion">Masa de mozzarella, tomate, orégano y jamón italiano cocido.</p>
+                            <div class="producto-pie">
+                                <span class="producto-precio">11,49 €</span>
+                                <span class="producto-ver">Ver detalles</span>
+                            </div>
+                        </div>
+                    </a>
 
-        <article class="menu-card">
-          <img src="./imgs/maxresdefault.jpg" alt="Raviolis venecianos">
-          <div class="card-content">
-            <span class="price">$ 11.99</span>
-            <h2>Raviolis venecianos</h2>
-            <p>Pasta rellena de queso y espinacas, nata, nueces y especias.</p>
-          </div>
-        </article>
+                    <a href="detalles.html" class="producto">
+                        <img src="./imgs/receta-pizza-de-pepperoni-facil-1729847335.jpg">
+                        <div class="producto-info">
+                            <span class="etiqueta">Pizza</span>
+                            <h2 class="producto-nombre">Pizza pepperoni</h2>
+                            <p class="producto-descripcion">Base de mozzarella, tomate, orégano y salami picante.</p>
+                            <div class="producto-pie">
+                                <span class="producto-precio">12,49 €</span>
+                                <span class="producto-ver">Ver detalles</span>
+                            </div>
+                        </div>
+                    </a>
 
-      </div>
-    </div>
-  </section>
+                    <a href="detalles.html" class="producto">
+                        <img src="./imgs/a.jpg">
+                        <div class="producto-info">
+                            <span class="etiqueta">Pizza</span>
+                            <h2 class="producto-nombre">Pizza mediterránea</h2>
+                            <p class="producto-descripcion">Pizza de mozzarella, tomate, aceitunas, salami y romero.</p>
+                            <div class="producto-pie">
+                                <span class="producto-precio">13,49 €</span>
+                                <span class="producto-ver">Ver detalles</span>
+                            </div>
+                        </div>
+                    </a>
 
-
-  <section class="cta-section">
-    <div class="cta-background"></div>
-
-    <div class="cta-content">
-      <h2>
-        Nos movemos hacia ti<br>
-        para lo que necesites
-      </h2>
-
-      <p>
-        Porque una buena comida se puede disfrutar en muchos sitios
-        y porque se puede compartir experiencias a lo grande.
-      </p>
-
-      <div class="cta-buttons">
-        <a href="#pedir" class="btn btn-primary">Pedir Online</a>
-        <a href="#reservar" class="btn btn-secondary">Reservar Evento</a>
-      </div>
-    </div>
-  </section>
-
-
-
+                    <a href="detalles.html" class="producto" id="pastas">
+                        <img src="./imgs/lasagna-original..jpg">
+                        <div class="producto-info">
+                            <span class="etiqueta">Pasta</span>
+                            <h2 class="producto-nombre">Lasaña de carne</h2>
+                            <p class="producto-descripcion">Lasaña de carne picada, cebolla, bechamel, tomate, queso, hierbas y queso gratinado.</p>
+                            <div class="producto-pie">
+                                <span class="producto-precio">10,99 €</span>
+                                <span class="producto-ver">Ver detalles</span>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
 
     </main>
 
-    
-    <footer class="footer-pizzeria">
+    <footer class="pie" id="contacto">
+        <div class="contenedor">
+            <div class="pie-contenido">
 
-    <div class="footer-contenedor">
-        <div class="footer-contenido">
-        <div class="footer-marca">
+                <div class="pie-marca">
+                    <a href="index.html" class="pie-logo">
+                        <img src="./imgs/LogoCuadrado.png">
+                        <span>Pizzeria Il Padrino</span>
+                    </a>
+                    <img class="pie-mapa" src="./imgs/google-maps.jpg">
+                    <div class="pie-redes">
+                        <a href="https://x.com" target="_blank"><img src="./imgs/TWITTER_icon-icons.com_65486.png"></a>
+                        <a href="https://www.facebook.com" target="_blank"><img src="./imgs/FB_icon-icons.com_65484.png"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./imgs/instagram_icon_125245.png"></a>
+                    </div>
+                </div>
 
-            <a href="#" class="footer-logo">
-            <img src="./imgs/LogoCuadrado.png" alt="Logo de Pizzeria Il Padrino">
-            <p>Pizzeria Il Padrino</p>
-            </a>
+                <div class="pie-columna">
+                    <h2>Páginas</h2>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="tienda.html">Carta</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="index.html#articulos">Artículos</a></li>
+                        <li><a href="login.html">Iniciar sesión</a></li>
+                        <li><a href="registro.html">Crear cuenta</a></li>
+                    </ul>
+                </div>
 
-            <div class="footer-mapa">
-            <img src="./imgs/google-maps.jpg" alt="Ubicación de la pizzería">
+                <div class="pie-columna">
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li>Avenida Aeropuerto Nº2, Córdoba</li>
+                        <li>957 123 456</li>
+                        <li>info@ilpadrino.es</a></li>
+                    </ul>
+                </div>
+
+                <div class="pie-columna">
+                    <h2>Legal</h2>
+                    <ul>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+
             </div>
 
-            <div class="footer-redes">
-
-            <a href="#" class="footer-red">
-                <img src="./imgs/TWITTER_icon-icons.com_65486.png" width="10px" height="10px">
-
-            </a>
-
-            <a href="#" class="footer-red">
-                <img src="./imgs/FB_icon-icons.com_65484.png" width="15px" height="15px">
-            </a>
-
-            <a href="#" class="footer-red">
-                <img src="./imgs/instagram_icon_125245.png" width="15px" height="15px">
-            </a>
-
+            <div class="pie-inferior">
+                <p>Pizzeria Il Padrino</a> © 2026 by <a href="https://github.com/fru-17">Paco Reyes</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt=""></p>
             </div>
         </div>
-
-        <div class="footer-enlaces">
-
-            <div class="footer-columna">
-            <h3>Páginas</h3>
-
-            <nav aria-label="Páginas">
-                <a href="index.html">Inicio</a>
-                <a href="detalles.html">Carta</a>
-                <a href="tienda.html">Nosotros</a>
-                <a href="#">Contacto</a>
-                <a href="#">Reserva</a>
-                <a href="#">Artículos</a>
-            </nav>
-            </div>
-
-            <div class="footer-columna">
-            <h3>Legal</h3>
-
-            <nav aria-label="Información legal">
-                <a href="#">Aviso legal</a>
-                <a href="#">Políticas de privacidad</a>
-                <a href="#">Políticas de cookies</a>
-            </nav>
-            </div>
-
-        </div>
-
-        </div>
-
-        <div class="footer-inferior">
-        <p><a href="https://pizzeriailpadrino.es">Pizzeria Il Padrino</a> © 2026 by <a href="https://github.com/fru-17">Paco Reyes</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
-        </div>
-
-    </div>
-
     </footer>
 
 </body>

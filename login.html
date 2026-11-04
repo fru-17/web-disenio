@@ -1,115 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Iniciar sesión | Pizzeria Il Padrino</title>
     <link rel="icon" type="image/x-icon" href="./imgs/LogoCuadrado.ico">
-    <title>Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="./imgs/LogoCuadrado.png" alt="logo">
-            <h1><i>Pizzeria Il Padrino</i></h1>
-        </div>
-        <div class="menus">
-            <ul class="horizontal">
-                <li class="active"><a href="inicio.html">Inicio</a></li>
-                <li><a href="detalles.html">Carta</a></li>
-                <li><a href="tienda.html">Nosotros</a></li>
-                <li>Contacto</li>
+
+    <header class="cabecera">
+        <a href="index.html" class="logo">
+            <img src="./imgs/LogoCuadrado.png">
+            <span>Pizzeria Il Padrino</span>
+        </a>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Carta</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </div>
-        <div class="reserva">
-            <button>Reservar</button>
+        </nav>
+
+        <div class="cabecera-acciones">
+            <a href="login.html" class="enlace-acceso activo">Acceder</a>
+            <a href="#contacto" class="boton boton-oscuro">Reservar</a>
         </div>
     </header>
-    <main>
 
+    <main class="acceso">
+        <div class="contenedor acceso-contenido">
 
+            <div class="acceso-imagen acceso-imagen-login">
+                <p class="acceso-titulo">Bienvenido de nuevo</p>
+                <p>Inicia sesión para obtener ventajas exclusivas.</p>
+            </div>
 
+            <form class="formulario" action="index.html">
+                <h1>Iniciar sesión</h1>
+                <p class="formulario-intro">Introduce correo electrónico y contraseña.</p>
 
-    <section class="login-contenedor">
-        <p>arenques</p>
-        <form>
-            
-        </form>
-    </section>
+                <div class="campo">
+                    <label for="email">Correo electrónico</label>
+                    <input type="email" id="email" required>
+                </div>
 
+                <div class="campo">
+                    <label for="password">Contraseña</label>
+                    <input type="password" id="password" required>
+                </div>
 
+                <button type="submit" class="boton boton-rojo">Iniciar sesión</button>
 
+                <p class="formulario-cambio"><a href="registro.html" class="enlace-rojo">Crear cuenta</a></p>
+            </form>
+
+        </div>
     </main>
 
-    
-    <footer class="footer-pizzeria">
+    <footer class="pie" id="contacto">
+        <div class="contenedor">
+            <div class="pie-contenido">
 
-    <div class="footer-contenedor">
-        <div class="footer-contenido">
-        <div class="footer-marca">
+                <div class="pie-marca">
+                    <a href="index.html" class="pie-logo">
+                        <img src="./imgs/LogoCuadrado.png">
+                        <span>Pizzeria Il Padrino</span>
+                    </a>
+                    <img class="pie-mapa" src="./imgs/google-maps.jpg">
+                    <div class="pie-redes">
+                        <a href="https://x.com" target="_blank"><img src="./imgs/TWITTER_icon-icons.com_65486.png"></a>
+                        <a href="https://www.facebook.com" target="_blank"><img src="./imgs/FB_icon-icons.com_65484.png"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./imgs/instagram_icon_125245.png"></a>
+                    </div>
+                </div>
 
-            <a href="#" class="footer-logo">
-            <img src="./imgs/LogoCuadrado.png" alt="Logo de Pizzeria Il Padrino">
-            <p>Pizzeria Il Padrino</p>
-            </a>
+                <div class="pie-columna">
+                    <h2>Páginas</h2>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="tienda.html">Carta</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="index.html#articulos">Artículos</a></li>
+                        <li><a href="login.html">Iniciar sesión</a></li>
+                        <li><a href="registro.html">Crear cuenta</a></li>
+                    </ul>
+                </div>
 
-            <div class="footer-mapa">
-            <img src="./imgs/google-maps.jpg" alt="Ubicación de la pizzería">
+                <div class="pie-columna">
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li>Avenida Aeropuerto Nº2, Córdoba</li>
+                        <li>957 123 456</li>
+                        <li>info@ilpadrino.es</a></li>
+                    </ul>
+                </div>
+
+                <div class="pie-columna">
+                    <h2>Legal</h2>
+                    <ul>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+
             </div>
 
-            <div class="footer-redes">
-
-            <a href="#" class="footer-red">
-                <img src="./imgs/TWITTER_icon-icons.com_65486.png" width="15px" height="15px">
-
-            </a>
-
-            <a href="#" class="footer-red">
-                <img src="./imgs/FB_icon-icons.com_65484.png" width="15px" height="15px">
-            </a>
-
-            <a href="#" class="footer-red">
-                <img src="./imgs/instagram_icon_125245.png" width="15px" height="15px">
-            </a>
-
+            <div class="pie-inferior">
+                <p>Pizzeria Il Padrino</a> © 2026 by <a href="https://github.com/fru-17">Paco Reyes</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt=""></p>
             </div>
         </div>
-
-        <div class="footer-enlaces">
-
-            <div class="footer-columna">
-            <h3>Páginas</h3>
-
-            <nav aria-label="Páginas">
-                <a href="#">Inicio</a>
-                <a href="#">Carta</a>
-                <a href="#">Nosotros</a>
-                <a href="#">Contacto</a>
-                <a href="#">Reserva</a>
-                <a href="#">Artículos</a>
-            </nav>
-            </div>
-
-            <div class="footer-columna">
-            <h3>Legal</h3>
-
-            <nav aria-label="Información legal">
-                <a href="#">Aviso legal</a>
-                <a href="#">Políticas de privacidad</a>
-                <a href="#">Políticas de cookies</a>
-            </nav>
-            </div>
-
-        </div>
-
-        </div>
-
-        <div class="footer-inferior">
-        <p><a href="https://pizzeriailpadrino.es">Pizzeria Il Padrino</a> © 2026 by <a href="https://github.com/fru-17">Paco Reyes</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
-        </div>
-
-    </div>
-
     </footer>
 
 </body>

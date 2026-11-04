@@ -1,310 +1,237 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <title>Inicio | Pizzeria Il Padrino</title>
     <link rel="icon" type="image/x-icon" href="./imgs/LogoCuadrado.ico">
-    <title>Inicio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="./imgs/LogoCuadrado.png" alt="logo">
-            <h1><i>Pizzeria Il Padrino</i></h1>
-        </div>
-        <div class="menus">
-            <ul class="horizontal">
-                <li class="active"><a href="index.html">Inicio</a></li>
-                <li><a href="detalles.html">Carta</a></li>
-                <li><a href="tienda.html">Nosotros</a></li>
-                <li>Contacto</li>
+    <audio autoplay loop hidden><source src="./media/musica.mp3"></audio>
+
+    <header class="cabecera">
+        <a href="index.html" class="logo">
+            <img src="./imgs/LogoCuadrado.png">
+            <span>Pizzeria Il Padrino</span>
+        </a>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html" class="activo">Inicio</a></li>
+                <li><a href="tienda.html">Carta</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
-        </div>
-        <div class="reserva">
-            <button>Reservar</button>
+        </nav>
+
+        <div class="cabecera-acciones">
+            <a href="login.html" class="enlace-acceso">Acceder</a>
+            <a href="#contacto" class="boton boton-oscuro">Reservar</a>
         </div>
     </header>
+
     <main>
-        <section id="hero">
-            <div id="herobox">
+
+        <section class="hero">
+            <div class="hero-caja">
                 <h1>Pizzeria Il Padrino</h1>
                 <p>El mejor italiano de la capital desde 1961</p>
-                <div id="buttonbox">
-                    <button style="background-color: darkred; color:white">Reservar</button>
-                    <button style="background-color: white; color:black">Carta</button>
-                </div>                
+                <div class="hero-botones">
+                    <a href="#contacto" class="boton boton-rojo">Reservar mesa</a>
+                    <a href="tienda.html" class="boton boton-blanco">Ver la carta</a>
+                </div>
             </div>
         </section>
 
-
-
-
-
-        <section id="seccion2">
-            <div id="seccion2img">
-                <img src="./imgs/interior-restaurante_1127-3392.avif" width="300px" height="300px">
-            </div>
-            <div id="seccion2text">
-                <h1 style="font-weight: 800;">Profesionales veteranos a tu disposición</h2><BR>
-                <p style="font-weight: 500;">Nuestra franquicia transmitida entre generaciones se compromete a proporcionar un servicio rápido, de calidad, único e inigualable para todos los públicos y eventos.</p>
-                <p style="font-weight: 500; font-size: 0.9rem;">Desde las raíces artesanales compartimos la remarcable y remarcable gastronomía de Italia a tu ciudad.</p>
-                <button style="background-color: darkred; color:white">Descubre más sobre nosotros</button>
+        <section class="seccion seccion2">
+            <div class="contenedor seccion-contenido">
+                <img src="./imgs/interior-restaurante_1127-3392.avif">
+                <div>
+                    <span class="etiqueta">Desde 1961</span>
+                    <h2>Profesionales veteranos a tu disposición</h2>
+                    <p>Nuestra franquicia transmitida entre generaciones se compromete a proporcionar un servicio rápido, de calidad, único e inigualable para todos los públicos y eventos.</p>
+                    <p>Desde las raíces artesanales compartimos la remarcable y remarcable gastronomía de Italia a tu ciudad.</p>
+                    <a href="nosotros.html" class="boton boton-rojo">Descubre más sobre nosotros</a>
+                </div>
             </div>
         </section>
 
-
-        <section id="seccion3">
-            <div id="seccion3text">
-                <h1 style="font-weight: 800; margin-top: 20px;">Profesionales veteranos a tu disposición</h2><BR>
-                <p style="font-weight: 500; margin-top: -20px; font-size: 0.9rem;">Desde las raíces artesanales compartimos la remarcable y remarcable gastronomía de Italia a tu ciudad.</p>
-                <ul style="margin-top: -10px;">
-                    <li>Bodas y comuniones</li>
-                    <li>Eventos corporativos y empresariales</li>
-                    <li>Actuaciones temáticas</li>
-                    <li>Y mucho más</li>
-                </ul>
-            </div>
-            <div id="seccion3img">
-                <img src="./imgs/image.jpg" width="300px" height="300px">
+        <section class="seccion seccion3">
+            <div class="contenedor seccion-contenido">
+                <div>
+                    <span class="etiqueta">Eventos</span>
+                    <h2>Celebra con nosotros tus momentos especiales</h2>
+                    <p>Preparamos menús a medida y organizamos la celebración de forma única para la ocasión.</p>
+                    <ul class="lista-eventos">
+                        <li>Bodas y comuniones</li>
+                        <li>Eventos corporativos y empresariales</li>
+                        <li>Actuaciones temáticas</li>
+                        <li>Y mucho más</li>
+                    </ul>
+                </div>
+                <img src="./imgs/image.jpg">
             </div>
         </section>
 
+        <section class="testimonios">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Opiniones de nuestros clientes</h2>
 
-
-        <section id="testimonio">
-            <h1 style="margin-top: 50px;">Opiniones de nuestros clientes</h1>
-            <div id="opiniones">
-
-                <div class="opinion">
-                    <h2>"Muy buen servicio"</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus semper, eu tellus vulputate tempus leo iaculis est diam, risus taciti massa class quis magnis imperdiet orci.</p>
-                    <hr class="divider">
-                    <div class="perfil">
-                        <img src="./imgs/squareclose-up-portrait-smiling-young-woman-looking-camera_171337-17994.jpg">
-                        <div class="perfil1">
-                            <h3>Ana Gómez</h3>
-                            <div class="perfil2">
-                                <img src="./imgs/star_77949.png">
-                                <p>5/5</p>
+                <div class="opiniones">
+                    <article class="opinion">
+                        <h3>"Muy buen servicio"</h3>
+                        <p class="opinion-texto">Lorem ipsum dolor sit amet consectetur adipiscing elit ridiculus semper, eu tellus vulputate tempus leo iaculis est diam, risus taciti massa class quis magnis imperdiet orci.</p>
+                        <hr>
+                        <div class="perfil">
+                            <img src="./imgs/squareclose-up-portrait-smiling-young-woman-looking-camera_171337-17994.jpg">
+                            <div>
+                                <p class="perfil-nombre">Ana Gómez</p>
+                                <p class="valoracion"><img src="./imgs/star_77949.png"> 5/5</p>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </article>
 
-                <div class="opinion">
-                    <h2>"Platos originales"</h2>
-                    <p>Posuere pulvinar phasellus ultrices placerat lacinia cum turpis sollicitudin torquent, ridiculus tristique platea accumsan eu, eget ullamcorper a conubia et aptent etiam sociis.</p>
-                    <hr class="divider">
-                    <div class="perfil">
-                        <img src="./imgs/cuadrado360_F_285983211_MgoZj1sj9Rfou8GRHtCvHtdgyEMxGEFS.jpg">
-                        <div class="perfil1">
-                            <h3>Raúl Jurado</h3>
-                            <div class="perfil2">
-                                <img src="./imgs/star_77949.png">
-                                <p>4/5</p>
+                    <article class="opinion">
+                        <h3>"Platos originales"</h3>
+                        <p class="opinion-texto">Posuere pulvinar phasellus ultrices placerat lacinia cum turpis sollicitudin torquent, ridiculus tristique platea accumsan eu, eget ullamcorper a conubia et aptent etiam sociis.</p>
+                        <hr>
+                        <div class="perfil">
+                            <img src="./imgs/cuadrado360_F_285983211_MgoZj1sj9Rfou8GRHtCvHtdgyEMxGEFS.jpg">
+                            <div>
+                                <p class="perfil-nombre">Raúl Jurado</p>
+                                <p class="valoracion"><img src="./imgs/star_77949.png"> 4/5</p>
                             </div>
                         </div>
-                    </div>
-                </div>
-                <div class="opinion">
-                    <h2>"Platos originales"</h2>
-                    <p>Tristique accumsan erat mattis sociosqu cras sem, nulla et bibendum dignissim mus ornare suspendisse, molestie curae arcu blandit ultrices.</p>
-                    <hr class="divider">
-                    <div class="perfil">
-                        <img src="./imgs/squarewhite-background-corporate-business-headshots-london-croydon-01-1024x682.jpg">
-                        <div class="perfil1">
-                            <h3>Raúl Jurado</h3>
-                            <div class="perfil2">
-                                <img src="./imgs/star_77949.png">
-                                <p>5/5</p>
+                    </article>
+
+                    <article class="opinion">
+                        <h3>"Ambiente familiar"</h3>
+                        <p class="opinion-texto">Tristique accumsan erat mattis sociosqu cras sem, nulla et bibendum dignissim mus ornare suspendisse, molestie curae arcu blandit ultrices.</p>
+                        <hr>
+                        <div class="perfil">
+                            <img src="./imgs/squarewhite-background-corporate-business-headshots-london-croydon-01-1024x682.jpg">
+                            <div>
+                                <p class="perfil-nombre">Carlos Martín</p>
+                                <p class="valoracion"><img src="./imgs/star_77949.png"> 5/5</p>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
         </section>
 
+        <section class="articulos" id="articulos">
+            <div class="contenedor">
+                <h2 class="titulo-seccion">Artículos más destacados</h2>
 
-        
-        
-        <section class="seccion-articulos">
-        <div class="contenedor-articulos">
-            <div class="cabecera-articulos">
-            <h2>Artículos más destacados</h2>
+                <div class="articulos-grid">
+                    <article class="articulo articulo-principal">
+                        <img src="./imgs/camarero-feliz-sirviendo-comida-grupo-amigos-alegres-pub_637285-12525.avif">
+                        <div class="articulo-texto">
+                            <time datetime="2026-09-30">30 de septiembre de 2026</time>
+                            <h3>Qué es lo que más valora un cliente del personal</h3>
+                            <p>Hemos preguntado a más de 500 clientes qué hace especial una visita. La amabilidad, la rapidez y que el camarero sepa recomendar un plato son lo más valorado.</p>
+                        </div>
+                    </article>
 
-            <a href="#" class="boton-articulos">
-                Ver todos nuestros artículos
-            </a>
-        </div>
+                    <div class="articulos-lista">
+                        <article class="articulo">
+                            <img src="./imgs/Captura de pantalla 2026-10-11 110543.png">
+                            <div class="articulo-texto">
+                                <time datetime="2024-01-01">1 de enero de 2024</time>
+                                <h3>Recetas fáciles de pasta que te sorprenderán</h3>
+                            </div>
+                        </article>
 
-            <div class="contenido-articulos">
+                        <article class="articulo">
+                            <img src="./imgs/3200x1800_regioni_italiane_primavera_hub-2.webp">
+                            <div class="articulo-texto">
+                                <time datetime="2025-02-02">2 de febrero de 2025</time>
+                                <h3>Impacto gastronómico de Italia en la cultura mediterránea</h3>
+                            </div>
+                        </article>
 
-            <article class="articulo-principal">
+                        <article class="articulo">
+                            <img src="./imgs/Captura de pantalla 2026-10-11 110421.png">
+                            <div class="articulo-texto">
+                                <time datetime="2023-03-03">3 de marzo de 2023</time>
+                                <h3>1º premio del campeonato nacional de dulces tradicionales</h3>
+                            </div>
+                        </article>
 
-                <a href="#" class="imagen-articulo">
-                <img src="./imgs/camarero-feliz-sirviendo-comida-grupo-amigos-alegres-pub_637285-12525.avif" alt="">
-                </a>
-
-                <div class="contenido-tarjeta principal-texto">
-                <time datetime="2026-09-30">
-                    30 de septiembre de 2026
-                </time>
-
-                <h3>
-                    <a href="#">
-                    Qué es lo que más valora un cliente del personal.
-                    </a>
-                </h3>
-
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit.
-                    Semper adipiscing massa gravida nisi cras enim quis nibh
-                    varius amet gravida ut facilisis neque egestas.
-                </p>
+                        <article class="articulo">
+                            <img src="./imgs/Captura de pantalla 2026-10-11 110244.png">
+                            <div class="articulo-texto">
+                                <time datetime="2022-04-04">4 de abril de 2022</time>
+                                <h3>Recomendaciones a la hora de preparar pizza casera</h3>
+                            </div>
+                        </article>
+                    </div>
                 </div>
-
-            </article>
-
-            <div class="lista-articulos">
-
-                <article class="tarjeta-articulo">
-                <a href="#" class="imagen-articulo">
-                    <img src="./imgs/Captura de pantalla 2026-10-11 110244.png" alt="">
-                </a>
-
-                <div class="contenido-tarjeta">
-                    <time datetime="2024-01-01">1 de Enero de 2024</time>
-                    <h3>
-                    <a href="#">Recetas fáciles que te sorprenderán.</a>
-                    </h3>
-                </div>
-                </article>
-
-                <article class="tarjeta-articulo">
-                <a href="#" class="imagen-articulo">
-                    <img src="./imgs/3200x1800_regioni_italiane_primavera_hub-2.webp" alt="">
-                </a>
-
-                <div class="contenido-tarjeta">
-                    <time datetime="2025-02-02">2 de Febrero de 2025</time>
-                    <h3>
-                    <a href="#">
-                        Impacto gastronómico de Italia en la cultura Mediterránea.
-                    </a>
-                    </h3>
-                </div>
-                </article>
-
-                <article class="tarjeta-articulo">
-                <a href="#" class="imagen-articulo">
-                    <img src="./imgs/Captura de pantalla 2026-10-11 110421.png" alt="">
-                </a>
-
-                <div class="contenido-tarjeta">
-                    <time datetime="2023-03-03">3 de Marzo de 2023</time>
-                    <h3>
-                    <a href="#">
-                        1º Premio del campeonato nacional de dulces tradicionales.
-                    </a>
-                    </h3>
-                </div>
-                </article>
-
-                <article class="tarjeta-articulo">
-                <a href="#" class="imagen-articulo">
-                    <img src="./imgs/Captura de pantalla 2026-10-11 110543.png" alt="">
-                </a>
-
-                <div class="contenido-tarjeta">
-                    <time datetime="2022-04-04">4 de Abril de 2022</time>
-                    <h3>
-                    <a href="#">
-                        Recomendaciones a la hora de preparar pizza casera.
-                    </a>
-                    </h3>
-                </div>
-                </article>
-
+                
+                <a href="nosotros.html" class="boton boton-rojo">Ver todos nuestros artículos</a>
             </div>
-            </div>
-        </div>
         </section>
-
-
-
 
     </main>
 
-    
-    <footer class="footer-pizzeria">
+    <footer class="pie" id="contacto">
+        <div class="contenedor">
+            <div class="pie-contenido">
 
-    <div class="footer-contenedor">
-        <div class="footer-contenido">
-        <div class="footer-marca">
+                <div class="pie-marca">
+                    <a href="index.html" class="pie-logo">
+                        <img src="./imgs/LogoCuadrado.png">
+                        <span>Pizzeria Il Padrino</span>
+                    </a>
+                    <img class="pie-mapa" src="./imgs/google-maps.jpg">
+                    <div class="pie-redes">
+                        <a href="https://x.com" target="_blank"><img src="./imgs/TWITTER_icon-icons.com_65486.png"></a>
+                        <a href="https://www.facebook.com" target="_blank"><img src="./imgs/FB_icon-icons.com_65484.png"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./imgs/instagram_icon_125245.png"></a>
+                    </div>
+                </div>
 
-            <a href="#" class="footer-logo">
-            <img src="./imgs/LogoCuadrado.png" alt="Logo de Pizzeria Il Padrino">
-            <p>Pizzeria Il Padrino</p>
-            </a>
+                <div class="pie-columna">
+                    <h2>Páginas</h2>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="tienda.html">Carta</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="index.html#articulos">Artículos</a></li>
+                        <li><a href="login.html">Iniciar sesión</a></li>
+                        <li><a href="registro.html">Crear cuenta</a></li>
+                    </ul>
+                </div>
 
-            <div class="footer-mapa">
-            <img src="./imgs/google-maps.jpg" alt="Ubicación de la pizzería">
+                <div class="pie-columna">
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li>Avenida Aeropuerto Nº2, Córdoba</li>
+                        <li>957 123 456</li>
+                        <li>info@ilpadrino.es</a></li>
+                    </ul>
+                </div>
+
+                <div class="pie-columna">
+                    <h2>Legal</h2>
+                    <ul>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+
             </div>
 
-            <div class="footer-redes">
-
-            <a href="#" class="footer-red">
-                <img src="./imgs/TWITTER_icon-icons.com_65486.png" width="15px" height="15px">
-
-            </a>
-
-            <a href="#" class="footer-red">
-                <img src="./imgs/FB_icon-icons.com_65484.png" width="15px" height="15px">
-            </a>
-
-            <a href="#" class="footer-red">
-                <img src="./imgs/instagram_icon_125245.png" width="15px" height="15px">
-            </a>
-
+            <div class="pie-inferior">
+                <p>Pizzeria Il Padrino</a> © 2026 by <a href="https://github.com/fru-17">Paco Reyes</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt=""></p>
             </div>
         </div>
-
-        <div class="footer-enlaces">
-
-            <div class="footer-columna">
-            <h3>Páginas</h3>
-
-            <nav aria-label="Páginas">
-                <a href="index.html">Inicio</a>
-                <a href="detalles.html">Carta</a>
-                <a href="tienda.html">Nosotros</a>
-                <a href="#">Contacto</a>
-                <a href="#">Reserva</a>
-                <a href="#">Artículos</a>
-            </nav>
-            </div>
-
-            <div class="footer-columna">
-            <h3>Legal</h3>
-
-            <nav aria-label="Información legal">
-                <a href="#">Aviso legal</a>
-                <a href="#">Políticas de privacidad</a>
-                <a href="#">Políticas de cookies</a>
-            </nav>
-            </div>
-
-        </div>
-
-        </div>
-
-        <div class="footer-inferior">
-        <p><a href="https://pizzeriailpadrino.es">Pizzeria Il Padrino</a> © 2026 by <a href="https://github.com/fru-17">Paco Reyes</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt="" style="max-width: 1em;max-height:1em;margin-left: .2em;"></p>
-        </div>
-
-    </div>
-
     </footer>
 
 </body>
