@@ -140,6 +140,22 @@ figure{
     color: var(--damarillo);
 }
 
+.boton-reservar{
+    animation: destacar 1.5s ease-in-out infinite;
+}
+
+@keyframes destacar{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.08);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+
 .enlace-rojo{
     color: var(--rojo);
     font-weight: 700;
@@ -375,6 +391,7 @@ figure{
     padding: 40px;
     color: var(--blanco);
     text-align: center;
+    animation: aparecer 1s ease-out;
 }
 
 .hero h1{
@@ -396,6 +413,12 @@ figure{
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
+}
+
+.seccion-contenido div{
+    animation: aparecer linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
 }
 
 .seccion{
@@ -451,6 +474,55 @@ figure{
 
 .testimonios{
     padding: 80px 0;
+    background-color: var(--wamarillo);
+}
+
+.carrusel{
+    background-color: var(--fondo);
+}
+
+.carrusel .carousel{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carrusel .carousel-control-prev-icon{
+    padding: 18px;
+    border-radius: 50%;
+    background-color: var(--damarillo);
+    background-size: 50%;
+}
+
+.carrusel .carousel-control-next-icon{
+    padding: 18px;
+    border-radius: 50%;
+    background-color: var(--damarillo);
+    background-size: 50%;
+}
+
+.carrusel .carousel-indicators button{
+    background-color: var(--lamarillo);
+}
+
+.carrusel .carousel-item{
+    /*transition: transform 2s cubic-bezier(0.1, 0.8, 0.9, 0.6);*/
+    transition: transform 1s ease-in;
+}
+
+.carrusel .carousel-item img{
+    height: 500px;
+    object-fit: cover;
+}
+
+.carrusel .carousel-caption{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carrusel .carousel-caption h3{
+    font-size: 1.8rem;
+    font-weight: 600;
 }
 
 .opiniones{
@@ -464,7 +536,7 @@ figure{
     flex-direction: column;
     padding: 30px;
     border-radius: 10px;
-    background-color: var(--wamarillo);
+    background-color: var(--fondo);
 }
 
 .opinion h3{
@@ -838,6 +910,58 @@ figure{
     font-weight: 500;
 }
 
+.pizza-cargando{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border: 3px solid var(--mamarillo);
+    border-radius: 50%;
+    background-color: var(--wamarillo);
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pizza-trozo{
+    width: 20px;
+    height: 20px;
+    background-color: var(--rojo);
+    border-radius: 0 100% 0 0;
+    transform-origin: bottom left;
+    translate: 50% -50%;
+}
+
+.boton-pedido:focus + .pizza-cargando .pizza-trozo{
+    animation: girar-pizza 2s linear;
+}
+
+.boton-pedido:focus + .pizza-cargando{
+    visibility: visible;
+    animation: desvanecer 2s linear forwards;
+}
+
+@keyframes girar-pizza{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes desvanecer{
+    0%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
 .enlace-volver{
     display: inline-block;
     margin-top: 20px;
@@ -1121,6 +1245,17 @@ figure{
 .formulario-cambio{
     margin: 20px 0 0;
     text-align: center;
+}
+
+@keyframes aparecer{
+    from{
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
 
