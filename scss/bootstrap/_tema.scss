@@ -1,0 +1,38 @@
+@use "../abstractos/variables" as *;
+
+@import "../vendor/bootstrap/functions";
+
+$primary: $rojo;
+$secondary: $damarillo;
+$light: $crema;
+$dark: $dgris;
+
+$body-color: $texto;
+$body-bg: $blanco;
+$border-color: $borde;
+$font-family-sans-serif: $fuente-texto;
+$headings-font-family: $fuente-titulos;
+$headings-font-weight: 700;
+$line-height-base: 1.6;
+
+$input-border-color: #cfcabb;
+$input-focus-border-color: $damarillo;
+$list-group-border-color: $borde;
+$list-group-hover-bg: $wamarillo;
+$list-group-action-hover-color: $damarillo;
+
+@import "../vendor/bootstrap/variables";
+@import "../vendor/bootstrap/variables-dark";
+@import "../vendor/bootstrap/maps";
+@import "../vendor/bootstrap/mixins";
+@import "../vendor/bootstrap/utilities";
+
+@import "../vendor/bootstrap/root";
+@import "../vendor/bootstrap/reboot";
+@import "../vendor/bootstrap/grid";
+@import "../vendor/bootstrap/forms";
+@import "../vendor/bootstrap/transitions";
+@import "../vendor/bootstrap/list-group";
+@import "../vendor/bootstrap/carousel";
+
+@import "../vendor/bootstrap/utilities/api";

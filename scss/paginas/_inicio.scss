@@ -1,0 +1,279 @@
+@use "../abstractos/variables" as *;
+
+.hero{
+    display: flex;
+    align-items: center;
+    min-height: 600px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(229, 175, 76, 0.8)), url("imgs/joshuemd-pizza-329523_1920.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-caja{
+    width: 50%;
+    padding: 40px;
+    color: $blanco;
+    text-align: center;
+    animation: aparecer 1s ease-out;
+}
+
+.hero h1{
+    margin-bottom: 10px;
+    font-size: 4rem;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6);
+}
+
+.hero p{
+    max-width: 460px;
+    margin: 0 auto 30px;
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-shadow: 0 1px 4px rgba(0, 0, 0, 0.6);
+}
+
+.hero-botones{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.seccion-contenido div{
+    animation: aparecer linear;
+    animation-timeline: view();
+    animation-range: entry 0% cover 40%;
+}
+
+.seccion{
+    padding: 80px 0;
+}
+
+.seccion2{
+    background-color: $gris;
+}
+
+.seccion3{
+    background-color: $lamarillo;
+}
+
+.seccion-contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.seccion img{
+    width: 100%;
+    height: 420px;
+    border: 1px solid black;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.seccion h2{
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+}
+
+.seccion p{
+    margin: 0 0 15px;
+    font-size: 1.1rem;
+}
+
+.seccion .boton{
+    margin-top: 10px;
+}
+
+.lista-eventos{
+    margin: 0 0 20px;
+    padding-left: 25px;
+    font-size: 1.25rem;
+}
+
+.lista-eventos li::marker{
+    color: $rojo;
+}
+
+.testimonios{
+    padding: 80px 0;
+    background-color: $wamarillo;
+}
+
+.carrusel{
+    background-color: $fondo;
+}
+
+.carrusel .carousel{
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.carrusel .carousel-control-prev-icon{
+    padding: 18px;
+    border-radius: 50%;
+    background-color: $damarillo;
+    background-size: 50%;
+}
+
+.carrusel .carousel-control-next-icon{
+    padding: 18px;
+    border-radius: 50%;
+    background-color: $damarillo;
+    background-size: 50%;
+}
+
+.carrusel .carousel-indicators button{
+    background-color: $lamarillo;
+}
+
+.carrusel .carousel-item{
+    /*transition: transform 2s cubic-bezier(0.1, 0.8, 0.9, 0.6);*/
+    transition: transform 1s ease-in;
+}
+
+.carrusel .carousel-item img{
+    height: 500px;
+    object-fit: cover;
+}
+
+.carrusel .carousel-caption{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.carrusel .carousel-caption h3{
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.opiniones{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.opinion{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    border-radius: 10px;
+    background-color: $fondo;
+}
+
+.opinion h3{
+    margin-bottom: 12px;
+    color: $rojo;
+    font-size: 1.4rem;
+}
+
+.opinion-texto{
+    flex: 1;
+    margin: 0;
+    color: $damarillo;
+}
+
+.opinion hr{
+    width: 100%;
+    margin: 20px 0;
+    border: none;
+    border-top: 1px solid $mamarillo;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.perfil img{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.perfil-nombre{
+    margin: 0;
+    font-weight: 700;
+}
+
+.valoracion{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin: 0;
+    font-weight: 700;
+}
+
+.valoracion img{
+    width: 18px;
+    height: 18px;
+}
+
+.articulos{
+    padding: 80px 0;
+    background-color: $fondo;
+}
+
+.articulos-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.articulos-lista{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.articulo{
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: $blanco;
+    box-shadow: 0 8px 28px rgba(0, 0, 0, 0.06);
+}
+
+.articulo img{
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.articulo-principal img{
+    height: 340px;
+}
+
+.articulo-texto{
+    padding: 18px 20px 22px;
+}
+
+.articulo time{
+    color: $texto-claro;
+    font-size: 0.85rem;
+}
+
+.articulo h3{
+    margin: 6px 0 0;
+    font-size: 1.1rem;
+}
+
+.articulo-principal h3{
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.articulo-principal p{
+    margin: 0;
+    color: $texto-claro;
+}
+
+.articulos .boton{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    width: 400px;
+}

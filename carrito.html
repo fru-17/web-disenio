@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito | Pizzeria Il Padrino</title>
+    <link rel="icon" type="image/x-icon" href="./imgs/LogoCuadrado.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="cabecera">
+        <a href="index.html" class="logo">
+            <img src="./imgs/LogoCuadrado.png">
+            <span>Pizzeria Il Padrino</span>
+        </a>
+
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="tienda.html">Carta</a></li>
+                <li><a href="nosotros.html">Nosotros</a></li>
+                <li><a href="eventos.html">Eventos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+
+        <div class="cabecera-acciones">
+            <a href="carrito.html" class="carrito-enlace" aria-label="Carrito"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg><span class="carrito-contador">3</span></a>
+            <a href="login.html" class="enlace-acceso">Acceder</a>
+            <a href="tienda.html" class="boton boton-oscuro boton-reservar">Reservar</a>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="carrito">
+            <div class="contenedor">
+                <h1 class="titulo-pagina">Tu carrito</h1>
+
+                <div class="carrito-contenido">
+
+                    <div class="carrito-lista">
+                        <article class="carrito-item">
+                            <img src="./imgs/238-n1.jpg">
+                            <div class="carrito-item-info">
+                                <span class="etiqueta">Pizza</span>
+                                <h2>Pizza margarita</h2>
+                                <p>Tamaño mediana (30 cm)</p>
+                            </div>
+                            <span class="producto-precio">9,99 €</span>
+                            <a href="#modal-quitar-1" class="boton boton-blanco">Quitar</a>
+                        </article>
+
+                        <article class="carrito-item">
+                            <img src="./imgs/lasagna-original..jpg">
+                            <div class="carrito-item-info">
+                                <span class="etiqueta">Pasta</span>
+                                <h2>Lasaña de carne</h2>
+                                <p>Ración individual</p>
+                            </div>
+                            <span class="producto-precio">10,99 €</span>
+                            <a href="#modal-quitar-2" class="boton boton-blanco">Quitar</a>
+                        </article>
+
+                        <article class="carrito-item">
+                            <img src="./imgs/RESTAU1-1.jpg">
+                            <div class="carrito-item-info">
+                                <span class="etiqueta">Social</span>
+                                <h2>Cumpleaños y otras celebraciones</h2>
+                                <p>Evento para hasta 15 invitados</p>
+                            </div>
+                            <span class="producto-precio">350,00 €</span>
+                            <a href="#modal-quitar-3" class="boton boton-blanco">Quitar</a>
+                        </article>
+
+                        <a href="tienda.html" class="enlace-rojo">Seguir comprando</a>
+                    </div>
+
+                    <aside class="resumen">
+                        <h2>Resumen del pedido</h2>
+                        <div class="resumen-fila">
+                            <span>Subtotal</span>
+                            <span>370,98 €</span>
+                        </div>
+                        <div class="resumen-fila">
+                            <span>Gastos de envío</span>
+                            <span>Gratis</span>
+                        </div>
+                        <div class="resumen-fila resumen-total">
+                            <span>Total</span>
+                            <span>370,98 €</span>
+                        </div>
+                        <a href="pago.html" class="boton boton-rojo">Ir al pago</a>
+                    </aside>
+
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="pie" id="contacto">
+        <div class="contenedor">
+            <div class="pie-contenido">
+
+                <div class="pie-marca">
+                    <a href="index.html" class="pie-logo">
+                        <img src="./imgs/LogoCuadrado.png">
+                        <span>Pizzeria Il Padrino</span>
+                    </a>
+                    <img class="pie-mapa" src="./imgs/google-maps.jpg">
+                    <div class="pie-redes">
+                        <a href="https://x.com" target="_blank"><img src="./imgs/TWITTER_icon-icons.com_65486.png"></a>
+                        <a href="https://www.facebook.com" target="_blank"><img src="./imgs/FB_icon-icons.com_65484.png"></a>
+                        <a href="https://www.instagram.com" target="_blank"><img src="./imgs/instagram_icon_125245.png"></a>
+                    </div>
+                </div>
+
+                <div class="pie-columna">
+                    <h2>Páginas</h2>
+                    <ul>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="tienda.html">Carta</a></li>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="eventos.html">Eventos</a></li>
+                        <li><a href="index.html#articulos">Artículos</a></li>
+                        <li><a href="login.html">Iniciar sesión</a></li>
+                        <li><a href="registro.html">Crear cuenta</a></li>
+                    </ul>
+                </div>
+
+                <div class="pie-columna">
+                    <h2>Contacto</h2>
+                    <ul>
+                        <li>Avenida Aeropuerto Nº2, Córdoba</li>
+                        <li>957 123 456</li>
+                        <li>info@ilpadrino.es</a></li>
+                    </ul>
+                </div>
+
+                <div class="pie-columna">
+                    <h2>Legal</h2>
+                    <ul>
+                        <li><a href="#">Aviso legal</a></li>
+                        <li><a href="#">Política de privacidad</a></li>
+                        <li><a href="#">Política de cookies</a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="pie-inferior">
+                <p>Pizzeria Il Padrino</a> © 2026 by <a href="https://github.com/fru-17">Paco Reyes</a> is licensed under <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/">CC BY-NC-SA 4.0</a><img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt=""><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt=""><img src="https://mirrors.creativecommons.org/presskit/icons/nc.svg" alt=""><img src="https://mirrors.creativecommons.org/presskit/icons/sa.svg" alt=""></p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modal" id="modal-quitar-1">
+        <a href="#" class="modal-fondo" aria-label="Cerrar"></a>
+        <div class="modal-caja" role="dialog" aria-modal="true">
+            <h2 class="modal-titulo">Producto eliminado</h2>
+            <p class="modal-texto">Pizza margarita se ha eliminado de tu carrito.</p>
+            <div class="modal-botones">
+                <a href="#" class="boton boton-rojo">Aceptar</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-quitar-2">
+        <a href="#" class="modal-fondo" aria-label="Cerrar"></a>
+        <div class="modal-caja" role="dialog" aria-modal="true">
+            <h2 class="modal-titulo">Producto eliminado</h2>
+            <p class="modal-texto">Lasaña de carne se ha eliminado de tu carrito.</p>
+            <div class="modal-botones">
+                <a href="#" class="boton boton-rojo">Aceptar</a>
+            </div>
+        </div>
+    </div>
+    <div class="modal" id="modal-quitar-3">
+        <a href="#" class="modal-fondo" aria-label="Cerrar"></a>
+        <div class="modal-caja" role="dialog" aria-modal="true">
+            <h2 class="modal-titulo">Producto eliminado</h2>
+            <p class="modal-texto">Cumpleaños y otras celebraciones se ha eliminado de tu carrito.</p>
+            <div class="modal-botones">
+                <a href="#" class="boton boton-rojo">Aceptar</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

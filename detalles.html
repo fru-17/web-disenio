@@ -29,8 +29,9 @@
         </nav>
 
         <div class="cabecera-acciones">
+            <a href="carrito.html" class="carrito-enlace" aria-label="Carrito"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg><span class="carrito-contador">3</span></a>
             <a href="login.html" class="enlace-acceso">Acceder</a>
-            <a href="#contacto" class="boton boton-oscuro boton-reservar">Reservar</a>
+            <a href="tienda.html" class="boton boton-oscuro boton-reservar">Reservar</a>
         </div>
     </header>
 
@@ -68,7 +69,7 @@
                         </fieldset>
 
                         <div class="detalle-botones">
-                            <button type="button" class="boton boton-rojo boton-pedido">Añadir al pedido</button>
+                            <a href="#modal-carrito" class="boton boton-rojo boton-pedido">Añadir al pedido</a>
                             <span class="pizza-cargando">
                                 <span class="pizza-trozo"></span>
                             </span>
@@ -199,5 +200,16 @@
         </div>
     </footer>
 
+    <div class="modal" id="modal-carrito">
+        <a href="#" class="modal-fondo" aria-label="Cerrar"></a>
+        <div class="modal-caja" role="dialog" aria-modal="true">
+            <h2 class="modal-titulo">Añadido al carrito</h2>
+            <p class="modal-texto">Pizza margarita se ha añadido a tu carrito.</p>
+            <div class="modal-botones">
+                <a href="tienda.html" class="boton boton-blanco">Seguir comprando</a>
+                <a href="carrito.html" class="boton boton-rojo">Ver carrito</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

@@ -1,0 +1,58 @@
+@use "../abstractos/variables" as *;
+
+.boton{
+    display: inline-block;
+    padding: 12px 28px;
+    border: 2px solid transparent;
+    border-radius: 30px;
+    font-family: $fuente-texto;
+    font-size: 1rem;
+    font-weight: 700;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-rojo{
+    background-color: $rojo;
+    color: $blanco;
+    border: $negro solid 2px;
+}
+
+.boton-rojo:hover{
+    background-color: $drojo;
+}
+
+.boton-blanco{
+    border-color: $texto;
+    background-color: $blanco;
+    color: $texto;
+}
+
+.boton-blanco:hover{
+    background-color: $wamarillo;
+}
+
+.boton-oscuro{
+    background-color: $damarillo;
+    color: $wamarillo;
+}
+
+.boton-oscuro:hover{
+    border-color: $damarillo;
+    background-color: $wamarillo;
+    color: $damarillo;
+}
+
+.boton-reservar{
+    animation: destacar 1.5s ease-in-out infinite;
+}
+
+.enlace-rojo{
+    color: $rojo;
+    font-weight: 700;
+}
+
+.enlace-rojo:hover{
+    text-decoration: underline;
+}

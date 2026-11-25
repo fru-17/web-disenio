@@ -1,0 +1,53 @@
+@use "../abstractos/variables" as *;
+
+.pago-formulario{
+    border: 1px solid $borde;
+    border-radius: 10px;
+    background-color: $blanco;
+}
+
+.pago-formulario h2{
+    margin-bottom: 18px;
+    font-size: 1.6rem;
+}
+
+.pago-formulario .list-group-item{
+    padding: 16px 20px;
+    border-color: $borde;
+    color: $texto;
+}
+
+.pago-metodo-nombre{
+    display: block;
+    font-family: $fuente-titulos;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+.pago-metodo-texto{
+    display: block;
+    color: $texto-claro;
+    font-size: 0.9rem;
+}
+
+.pago-formulario .form-label{
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+.pago-formulario .form-control{
+    padding: 12px 15px;
+    border: 1px solid #cfcabb;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.pago-formulario .form-control:focus{
+    border-color: $damarillo;
+    box-shadow: none;
+}
+
+.pago-formulario .form-check-input:focus{
+    border-color: $rojo;
+    box-shadow: 0 0 0 0.2rem rgba($rojo, 0.2);
+}

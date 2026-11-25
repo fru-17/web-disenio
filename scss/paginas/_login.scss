@@ -1,0 +1,47 @@
+@use "../abstractos/variables" as *;
+
+.acceso{
+    padding: 60px 0;
+    background-color: $crema;
+}
+
+.acceso-contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    max-width: 1500px;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: $blanco;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.acceso-imagen{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 50px 40px;
+    background-position: center;
+    background-size: cover;
+    color: $wamarillo;
+}
+
+.acceso-imagen-login{
+    background-image: linear-gradient(rgba(71, 70, 11, 0.3), rgba(71, 70, 11, 0.9)), url("imgs/joshuemd-pizza-329523_1920.jpg");
+}
+
+.acceso-imagen-registro{
+    background-image: linear-gradient(rgba(71, 70, 11, 0.3), rgba(71, 70, 11, 0.9)), url("imgs/image.jpg");
+}
+
+.acceso-titulo{
+    margin: 0 0 10px;
+    color: $blanco;
+    font-family: $fuente-titulos;
+    font-size: 2.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.acceso-imagen p{
+    margin-top: 0;
+}

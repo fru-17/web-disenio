@@ -29,8 +29,9 @@
         </nav>
 
         <div class="cabecera-acciones">
+            <a href="carrito.html" class="carrito-enlace" aria-label="Carrito"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="20" r="1.5"/><circle cx="18" cy="20" r="1.5"/><path d="M2 3h3l2.7 12.4a1 1 0 0 0 1 .8h8.9a1 1 0 0 0 1-.8L20 7H6"/></svg><span class="carrito-contador">3</span></a>
             <a href="login.html" class="enlace-acceso">Acceder</a>
-            <a href="#contacto" class="boton boton-oscuro">Reservar</a>
+            <a href="tienda.html" class="boton boton-oscuro boton-reservar">Reservar</a>
         </div>
     </header>
 
@@ -46,6 +47,7 @@
                 <div class="detalle-info">
                     <span class="etiqueta">Celebraciones</span>
                     <h1>Bodas y comuniones</h1>
+                    <p class="detalle-precio">1.499 €</p>
                     <p class="detalle-descripcion">Menús a medida y un salón decorado a medida.
                         Más de 200 bodas y comuniones demuestran nuestra experiencia y eficacia para ayudar a organizar tu día más especial.
                     </p>
@@ -56,9 +58,12 @@
                         <li>Salón decorado según la ocasión</li>
                         <li>Consideración de alergias e intolerancias</li>
                     </ul>
+                    <p class="detalle-descripcion-aviso"><i>
+                        Una vez efectuado el pago será notificado por correo electrónico y/o teléfono para discutir la negociación. Garantizamos la devolución si desea cancelar la planificación, no habrá reembolso una vez confirmado los preparativos. Antelación mínima de 1 mes.</i>
+                    </p>
 
                     <div class="detalle-botones">
-                        <a href="#contacto" class="boton boton-rojo">Solicitar presupuesto</a>
+                        <a href="#modal-carrito" class="boton boton-rojo">Añadir al carrito</a>
                     </div>
 
                     <a href="eventos.html" class="enlace-rojo enlace-volver">Volver a eventos</a>
@@ -125,5 +130,16 @@
         </div>
     </footer>
 
+    <div class="modal" id="modal-carrito">
+        <a href="#" class="modal-fondo" aria-label="Cerrar"></a>
+        <div class="modal-caja" role="dialog" aria-modal="true">
+            <h2 class="modal-titulo">Añadido al carrito</h2>
+            <p class="modal-texto">Bodas y comuniones se ha añadido a tu carrito.</p>
+            <div class="modal-botones">
+                <a href="tienda.html" class="boton boton-blanco">Seguir comprando</a>
+                <a href="carrito.html" class="boton boton-rojo">Ver carrito</a>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

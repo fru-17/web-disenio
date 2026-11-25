@@ -1,0 +1,65 @@
+@use "../abstractos/variables" as *;
+
+.formulario{
+    padding: 50px 45px;
+}
+
+.formulario h1{
+    margin-bottom: 8px;
+    font-size: 2.3rem;
+}
+
+.formulario-intro{
+    margin: 0 0 25px;
+    color: $texto-claro;
+}
+
+.campo{
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    margin-bottom: 18px;
+}
+
+.campo label{
+    font-weight: 500;
+}
+
+.campo input{
+    padding: 12px 15px;
+    border: 1px solid #cfcabb;
+    border-radius: 8px;
+    font: inherit;
+}
+
+.campo input:focus{
+    border-color: $damarillo;
+}
+
+.campos-fila{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.casilla{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.casilla input{
+    width: 18px;
+    height: 18px;
+}
+
+.formulario .boton{
+    width: 100%;
+}
+
+.formulario-cambio{
+    margin: 20px 0 0;
+    text-align: center;
+}

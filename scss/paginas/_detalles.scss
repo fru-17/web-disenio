@@ -1,0 +1,188 @@
+@use "../abstractos/variables" as *;
+
+.detalle{
+    padding: 25px 0 70px;
+}
+
+.detalle-contenido{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    align-items: start;
+}
+
+.detalle-imagen img{
+    width: 100%;
+    height: 600px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.detalle-info h1{
+    margin-bottom: 10px;
+    font-size: 2.8rem;
+}
+
+.detalle-valoracion{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    color: $texto-claro;
+}
+
+.detalle-valoracion img{
+    width: 18px;
+    height: 18px;
+}
+
+.detalle-precio{
+    margin: 15px 0;
+    color: $rojo;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.detalle-descripcion{
+    margin: 0 0 25px;
+    color: $texto-claro;
+    font-size: 1.05rem;
+}
+
+.detalle-descripcion-aviso{
+    margin: 0 0 25px;
+    color: $texto-claro;
+    font-size: 0.8rem;
+}
+
+.detalle-info h2{
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.ingredientes{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 0 0 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.ingredientes li{
+    padding: 5px 14px;
+    border: 1px solid $borde;
+    border-radius: 30px;
+    background-color: $crema;
+    font-size: 0.9rem;
+}
+
+.detalle-compra fieldset{
+    margin: 0 0 20px;
+    padding: 0;
+    border: none;
+}
+
+.detalle-compra legend{
+    margin-bottom: 10px;
+    font-family: $fuente-titulos;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.tamanios{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tamanios label{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 16px;
+    border: 1px solid $borde;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.tamanios input{
+    accent-color: $rojo;
+}
+
+.casilla input{
+    accent-color: $rojo;
+}
+
+.detalle-botones{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.detalle-botones label{
+    font-weight: 500;
+}
+
+.pizza-cargando{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    border: 3px solid $mamarillo;
+    border-radius: 50%;
+    background-color: $wamarillo;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pizza-trozo{
+    width: 20px;
+    height: 20px;
+    background-color: $rojo;
+    border-radius: 0 100% 0 0;
+    transform-origin: bottom left;
+    translate: 50% -50%;
+}
+
+.boton-pedido:focus + .pizza-cargando .pizza-trozo{
+    animation: girar-pizza 2s linear;
+}
+
+.boton-pedido:focus + .pizza-cargando{
+    visibility: visible;
+    animation: desvanecer 2s linear forwards;
+}
+
+@keyframes girar-pizza{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes desvanecer{
+    0%{
+        opacity: 1;
+    }
+    80%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 0;
+    }
+}
+
+.enlace-volver{
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.relacionados{
+    padding: 60px 0 80px;
+    background-color: $fondo;
+}

@@ -1,0 +1,122 @@
+@use "../abstractos/variables" as *;
+
+.cabecera{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 10px 30px;
+    background-image: linear-gradient(to right, $lamarillo, $mamarillo);
+    color: $damarillo;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img{
+    width: 50px;
+    height: 50px;
+}
+
+.logo span{
+    font-family: $fuente-titulos;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+.menu{
+    flex: 1;
+}
+
+.menu ul{
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu a{
+    display: block;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.enlace-acceso{
+    display: block;
+    padding: 8px 14px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.menu a:hover{
+    background-color: $damarillo;
+    color: $wamarillo;
+}
+
+.enlace-acceso:hover{
+    background-color: $damarillo;
+    color: $wamarillo;
+}
+
+.menu a.activo{
+    background-color: $wamarillo;
+    color: $damarillo;
+}
+
+.enlace-acceso.activo{
+    background-color: $wamarillo;
+    color: $damarillo;
+}
+
+.cabecera-acciones{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.cabecera .boton{
+    padding: 10px 22px;
+}
+
+.carrito-enlace{
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 8px 10px;
+    border-radius: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.carrito-enlace:hover{
+    background-color: $damarillo;
+    color: $wamarillo;
+}
+
+.carrito-contador{
+    position: absolute;
+    top: 0;
+    right: 0;
+    min-width: 20px;
+    height: 20px;
+    padding: 0 5px;
+    border-radius: 10px;
+    background-color: $rojo;
+    color: $blanco;
+    font-size: 0.75rem;
+    font-weight: 700;
+    line-height: 20px;
+    text-align: center;
+}

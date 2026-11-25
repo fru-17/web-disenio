@@ -1,0 +1,116 @@
+@use "../abstractos/variables" as *;
+
+.pie{
+    padding: 50px 0 25px;
+    background-color: $dgris;
+    color: #d3d0c3;
+}
+
+.pie-contenido{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 40px;
+}
+
+.pie-logo{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    color: $lamarillo;
+}
+
+.pie-logo img{
+    width: 45px;
+    height: 45px;
+}
+
+.pie-logo span{
+    font-family: $fuente-titulos;
+    font-size: 1.8rem;
+    font-style: italic;
+}
+
+.pie-mapa{
+    width: 100%;
+    height: 220px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.pie-redes{
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+}
+
+.pie-redes a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: $lamarillo;
+    transition: background-color 0.3s;
+}
+
+.pie-redes a:hover{
+    background-color: $fondo;
+}
+
+.pie-redes img{
+    width: 18px;
+    height: 18px;
+}
+
+/*.pie-redes img:hover {
+    background-color: $lamarillo;
+}*/
+
+.pie-columna h2{
+    margin-bottom: 18px;
+    color: $lamarillo;
+    font-size: 1.4rem;
+}
+
+.pie-columna ul{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+    font-size: 0.95rem;
+    list-style: none;
+}
+
+.pie-columna a:hover{
+    color: $lamarillo;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.pie-inferior{
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #606060;
+    color: $gris;
+    font-size: 0.85rem;
+    text-align: center;
+}
+
+.pie-inferior p{
+    margin: 0;
+}
+
+.pie-inferior a{
+    text-decoration: underline;
+}
+
+.pie-inferior img{
+    display: inline;
+    width: 1em;
+    height: 1em;
+    margin-left: 0.2em;
+    vertical-align: middle;
+}
